@@ -1,0 +1,2 @@
+// Shows all the databases that are currently in the system
+show dbs;
