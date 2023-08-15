@@ -1,2 +1,2 @@
 // Creates or uses a new database mydb
-use mydb;
+use my_db;
