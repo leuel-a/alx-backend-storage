@@ -2,6 +2,7 @@
 """Defines the Cache class"""
 from uuid import uuid4
 from redis import Redis
+from typing import Union
 
 
 class Cache:
@@ -11,7 +12,7 @@ class Cache:
         self._redis = Redis()
         self._redis.flushdb()
 
-    def store(self, data: str | bytes | int | float) -> str:
+    def store(self, data: Union[int, str, float, bytes]) -> str:
         """Stores the data with a uniquely generated id using
         an id generator and returns the key where the data is
         stored at"""
