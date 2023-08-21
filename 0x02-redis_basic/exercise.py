@@ -16,6 +16,8 @@ class Cache:
         """Stores the data with a uniquely generated id using
         an id generator and returns the key where the data is
         stored at"""
+        if not data:
+            return ''
         key = str(uuid4())  # The key where the data will be stored at
         self._redis.set(key, data)
         return key
