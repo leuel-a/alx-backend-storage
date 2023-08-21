@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Defines the update_topics function"""
 from typing import List
 from pymongo.collection import Collection
